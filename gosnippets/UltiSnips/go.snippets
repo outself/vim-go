@@ -30,6 +30,11 @@ snippet br "break"
 break
 endsnippet
 
+# break
+snippet todo "todo"
+// TODO(outself): 
+endsnippet
+
 # channel
 snippet ch "chan Type"
 chan ${0:int}
@@ -342,6 +347,16 @@ go func() {
 	${1:${VISUAL}}
 }()
 ${0}
+endsnippet
+
+# test function
+snippet asse "assert.Equal ..."
+assert.Equal(t, ${0}, ${1})
+endsnippet
+
+# test function
+snippet asserr "assert.NoError ..."
+assert.NoError(t, err)
 endsnippet
 
 # test function
